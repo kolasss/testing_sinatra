@@ -1,0 +1,21 @@
+default: &default
+  adapter:  postgres
+  host:     localhost
+  encoding: unicode
+  # max_connections:     5
+
+development:
+  <<: *default
+  database: sinatra_test_app
+  username: developer
+  password: developer
+
+# test:
+#   <<: *default
+#   database: market_test
+#   username: developer
+#   password: developer
+
+# production:
+#   <<: *default
+#   database: market_production
