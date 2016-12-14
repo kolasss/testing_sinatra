@@ -1,4 +1,4 @@
 require './app'
 
-use Rack::MethodOverride
-run Sinatra::Application
+# use Rack::MethodOverride
+run MyApp::App

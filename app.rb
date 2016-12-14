@@ -1,12 +1,16 @@
 require 'pry'
-require 'sinatra'
-require "sinatra/reloader" if development?
+require 'sinatra/base'
 require "sinatra/namespace"
 require "sinatra/json"
-require_relative  'config/config'
-require_relative  'models/post'
-require_relative  'routes/posts'
 
-get '/' do
-  'Welcome to Ololo!'
+module MyApp
+  class App < Sinatra::Application
+    register Sinatra::Namespace
+
+    run! if app_file == $0
+  end
 end
+
+require_relative  'models/init'
+require_relative  'helpers/init'
+require_relative  'routes/init'
