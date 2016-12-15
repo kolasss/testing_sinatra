@@ -10,3 +10,13 @@
 gem install shotgun
 shotgun config.ru
 ```
+
+## Тесты
+
+Запуск тестов
+
+- rake
+
+или
+
+- rspec
