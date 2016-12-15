@@ -8,9 +8,10 @@ gem 'pg'
 
 group :development, :test do
   gem 'pry-byebug'
-  # gem 'awesome_print'
-  # gem 'racksh'
-  # gem 'debugger'
-  # gem 'pry'
-  # gem 'pry-debugger'
+end
+
+group :test do
+  gem 'rspec'
+  gem 'rack-test'
+  gem "factory_girl", "~> 4.0"
 end

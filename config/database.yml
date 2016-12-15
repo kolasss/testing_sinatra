@@ -10,11 +10,11 @@ development:
   username: developer
   password: developer
 
-# test:
-#   <<: *default
-#   database: market_test
-#   username: developer
-#   password: developer
+test:
+  <<: *default
+  database: sinatra_test_app_test
+  username: developer
+  password: developer
 
 # production:
 #   <<: *default
